@@ -6,6 +6,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "jquery": "1.11.3"
+    "jquery": "1.11.3",
+    "normalize.css": "~3.0.3"
   }
 }

@@ -1,11 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru-RU">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Портфолио</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="sfavicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="fonts/fira.css">
+	<link rel="stylesheet" href="bower/normalize.css/normalize.css"> 
+	<!--<script src="/js/modernizer.js"></script>-->
 </head>
 <body>
-	<h1>Тест!!! Тест!</h1>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header_content">
+				<a href="#">
+					<div class="logo">
+					</div>
+				</a>
+				<ul class="socials">
+                        <li class="socials-item">
+                            <a href="/" target="_blank" class="socials-link vk">Вконтакте</a>
+                        </li>
+                        <li class="socials-item">
+                            <a href="/" target="_blank" class="socials-link tw">Twitter</a>
+                        </li>
+                        <li class="socials-item">
+                            <a href="/" target="_blank" class="socials-link fb">Facebook</a>
+                        </li>
+                        <li class="socials-item">
+                            <a href="/" target="_blank" class="socials-link git">Github</a>
+                        </li>
+                    </ul>
+			</div>
+		</header>
+		<div class="container">
+			<aside class="sidebar">
+			     <nav class="nav">
+			     	<ul class="nav-list">
+			     		<li class="nav-item current"><a href="" class="nav-link">Обо мне</a></li>
+			     		<li class="nav-item"><a href="" class="nav-link">Мои работы</a></li>
+			     		<li class="nav-item"><a href="" class="nav-link">Связаться со мной</a></li>
+			     	</ul>
+			     </nav>
+				 <address class="contacts">
+				 	<div class="contacts_title">Контакты</div>
+			     	<ul>
+			     		<a href="mailto:kostyash1990@gmail.com"><li class="contacts_mail">написать мне</li></a>
+			     		<a href="tel:+79149708884"><li  class="contacts_phone">+79149708884</li></a>
+			     		<a href="skype:most-effect?chat"><li  class="contacts_skype">most-effect</li></a>
+			     	</ul>
+			     </address>
+		    </aside>
+			    <article class="content">
+			     	<section class="section-box clearfix">
+			     		<h2 class="section-box-header">
+			     			Основная информация
+			     		</h2>
+			     		<div class="photo-wrap ">
+			     			<div class="photo">
+				     			<img src="img/photo.jpg" alt="Константин Павлович" class="avatar">
+				     		</div>
+			     		</div>
+			     		<dl class="about-me">
+								<dt>Меня зовут: </dt>
+								<dd>Шириков Константин Павлович</dd>
+								<dt>Мой возраст: </dt>
+								<dd>25 лет</dd>
+								<dt>Мой город: </dt>
+								<dd>Владивосток, Россия</dd>
+								<dt>Моя специализация:</dt>
+								<dd>FRONTEND разработчик</dd>
+								<dt>Ключевые навыки:</dt>
+								<dd>
+									<ul class="skills">
+										<li>
+											html
+										</li>
+										<li>
+											css
+										</li>
+										<li>
+											javascript
+										</li>
+										<li>
+											gulp
+										</li>
+										<li>
+											git
+										</li>
+									</ul>
+								</dd>
+							</dl>
+			     	</section>
+			     	<section class="section-box clearfix">
+			     		<h2 class="section-box-header">
+			     			Опыт работы
+			     		</h2>
+			     		<div class="experience">
+				     		<span class="experience-title">ЮБ «РОСКОШЬ» - Помощник дизайнера
+				     		</span>
+				     		<span class="experience-description">
+				     			Май 2013 - Июль 2013
+				     		</span>
+			     		</div>
+			     		<div class="experience">
+				     		<span class="experience-title">
+				     			Индивидуальный предприниматель
+				     		</span>
+				     		<span class="experience-description">
+				     			Июль 2013 - Ноябрь 2013
+				     		</span>
+				     	</div>
+			     		<div class="experience">
+				     		<span class="experience-title">
+				     			КГБУЗ "АртГБ№1" - Системный администратор
+				     		</span>
+				     		<span class="experience-description">
+				     			Ноябрь 2013 - по настоящее время
+				     		</span>
+			     		</div>
+			     	</section>
+			     	<section class="section-box clearfix">
+			     		<h2 class="section-box-header">
+			     			Образование
+			     		</h2>
+			     		<div class="edu">
+			     			<span class="edu-title">
+			     				Информационные системы и технологии
+			     			</span>
+			     			<span class="edu-description">
+			     				Сентябрь 2008 — июнь 2013
+			     			</span>
+			     		</div>
+			     		<div class="course">
+			     			<span class="course-title">
+			     				Курсы Loftschool.ru
+			     			</span>
+			     			<span class="course-description">
+			     				Май 2015 — по настоящее время
+			     			</span>
+			     		</div>
+			     	</section>
+			    </article>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<a href="/"><div class="login">
+            </div></a>
+            <div class="copyrights">
+			© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его
+		</div>
+		</div>
+	</footer> 
 </body>
 </html>
