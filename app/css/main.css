@@ -5,11 +5,14 @@ body, html{
 	background: url(../img/bg.png);
 }
 
-a {
+body a {
 	text-decoration: none;
-	font-style: normal;
 }
 
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
 .container:before, .clearfix:before,
 .container:after, .clearfix:after {
 	content: " ";
@@ -21,7 +24,7 @@ a {
 
 .wrapper {
 	min-height:100%;
-	min-width: 970px;
+	min-width: 980px;
 	height:auto!important;
 	overflow:hidden;
 }
@@ -33,24 +36,30 @@ a {
 
 .header {
 	width: 100%;
+	min-width: 980px;
 	height: 118px;
 	background:#eff3f7 url(../img/line.png) bottom center no-repeat ;
 	position: relative;
 	margin-bottom: 39px;
 }
-
 .header_content {
-	width: 1200px;
+	max-width: 1200px;
+	min-width: 980px;
 	height: 118px;
 	margin: 0 auto;
 	position:relative;
 }
 
 .logo {
-	background: url(../img/logo.png) no-repeat;
 	width: 243px;
 	height: 47px;
 	position:absolute;
+	top:35px;
+	left:0;
+}
+.logo-text {
+	position: absolute;
+	font-size:0;
 	top:35px;
 	left:0;
 }
@@ -58,22 +67,28 @@ a {
 .socials{
 	margin: 35px 0;
 	padding: 0;
+	position: absolute;
 	min-width: 260px;
-	float: right;
+	right: 0;
 }
-
-.socials .socials-item {
-  list-style: none;
-  display: inline-block;
-  height: 47px;
-  width: 47px;
-  margin-left: 19px;
+.socials-item {
+	list-style: none;
+	display: inline-block;
+	height: 47px;
+	width: 47px;
+	margin-left: 19px;
 }
-
-.socials .socials-link {display: block;
-  height: 100%;
-  width: 100%;
-  text-indent: -9999px;
+.socials-item:first-child {
+	margin-left: 0;
+}
+.socials-link {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+.social-text {
+	position: absolute;
+	font-size:0;
 }
 .socials .socials-link.vk {background: url(../img/vk.png) no-repeat;}
 .socials .socials-link.vk:hover {background: url(../img/vk-active.png) no-repeat;}
@@ -83,11 +98,6 @@ a {
 .socials .socials-link.fb:hover {background: url(../img/fb-active.png) no-repeat}
 .socials .socials-link.git {background: url(../img/git.png) no-repeat}
 .socials .socials-link.git:hover {background: url(../img/git-active.png) no-repeat}
-
-.container {
-	max-width: 960px;
-	margin: 0 auto;
-}
 
 .sidebar {
 	width: 260px;
@@ -103,7 +113,6 @@ a {
 	font-size: 21px;
 	font-family: 'fira_sansbook';
 }
-
 .nav .nav-list {
 	list-style: none;
 	margin: 0;
@@ -111,32 +120,31 @@ a {
 }
 .nav .nav-item{
 	border-top: 2px solid #3ba8c0;
-	margin: 0 11px;
-	padding:18px 0 18px 16px;
+	margin: 0 10px;
+	height: 71px;
 }
 .nav .nav-item:first-child {
 	border-top:none;
 }
-.nav-item.current{
-	background: #3ba8c0;
-	margin: 0;
-	border-bottom: none;
-	padding-left: 27px;
-	padding-bottom: 22px;
-	margin-bottom: -2px;
-	font-size: 23px;
-	font-family: 'fira_sansbook';
-}
-.nav-link{	
-
+.nav-link{
+	position: relative;
+	padding: 20px 17px 0;
 	color: #959aa8;
 	display: block;
 }
 .nav-link:hover{
 	color: #3ba8c0;
 }
-
-.nav-item.current .nav-link{
+.nav-item.active{
+	position: relative;
+	padding: 0 11px 2px;
+	background: #3ba8c0;
+	margin: 0;
+	margin-bottom: -2px;
+	font-size: 23px;
+	font-family: 'fira_sansbook';
+}
+.nav-item.active .nav-link{
 	color: #ffffff;
 }
 
@@ -150,16 +158,19 @@ a {
 	font-family: 'fira_sansbook';
 	font-size: 21px;
 }
-.contacts ul{
+.contacts-list{
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-.contacts li {
-	padding-left: 80px;
+.contacts-item {
+	padding-left: 82px;
 	color: #ffffff;
 }
-.contacts a:hover{
+.contacts-link{
+	font-style: normal;
+}
+.contacts-link:hover{
 	text-decoration: underline;
 	color: #ffffff;
 }
@@ -169,20 +180,22 @@ a {
 	padding:8px 0 0 20px;
 	font-style: normal;
 }
-
-.contacts_mail, .contacts_phone, .contacts_skype{
+.contacts-item.mail,.contacts-item.phone,.contacts-item.skype{
 	height: 32px;
 	font-size: 17px;
 	padding-top: 8px;
 }
-.contacts_mail {
-	background: url(../img/mail.png) center left 45px no-repeat #41b9d4;
+.contacts-item.mail {
+	background: url(../img/mail.png) 43px center no-repeat;
+	background-color:  #41b9d4;
 }
-.contacts_phone {
-	background: url(../img/phone.png) center left 45px no-repeat #48cbe8;
+.contacts-item.phone {
+	background: url(../img/phone.png) 43px center no-repeat;
+	background-color: #48cbe8;
 }
-.contacts_skype {
-	background: url(../img/skype.png) center left 45px no-repeat #51daf8;
+.contacts-item.skype {
+	background: url(../img/skype.png) 43px center  no-repeat;
+	background-color: #51daf8;
 }
 
 .content {
@@ -196,9 +209,8 @@ a {
 	width: 650px;
 	border-radius: 4px;
 	margin-bottom: 26px;
-	padding-bottom: 36px;
+	padding-bottom: 34px;
 }
-
 .section-box-header {
 	padding: 14px 22px 12px;
 	margin: 0 0 17px 0;
@@ -209,6 +221,7 @@ a {
     font-family: 'fira_sansbook';
    	font-size: 27px;
 }
+
 .photo-wrap {
 	margin: 18px 0 0 54px;
 	float: left;
@@ -224,30 +237,33 @@ a {
 .avatar{
 	width:100%;
 }
+
 .about-me {
 	width: 420px;
 	float: right;
 	padding: 0;
 	margin: 0;
+	overflow: hidden;
 }
-
-.about-me dt {
+.about-me.dt {
 	color:#4a545d;
 	float:left;
 	padding: 0;
 	margin: 0 17px 5px 0;
 	font-family: 'fira_sansmedium';
 	font-size: 17px;
-	display: inline-block;
+    clear:left;
+    width: auto;
 }
-
-.about-me dd {
+.about-me.dd {
+	position: relative;
+	float:left;
 	margin: 0 0 5px 0;
 	padding: 2px 0;
 	font-family: 'fira_sansbook';
 	font-size: 15px;
 	color: #4a545d;
-	display: block;
+	width: auto;
 }
 
 .skills {
@@ -257,11 +273,10 @@ a {
 	list-style: none;
 	width: 240px;
 }
-
-.skills li {
+.skills-item {
 	margin: 7px 5px 4px 0;
 	padding: 1px 14px;
-	font-family: 'proxima_nova_condensedSBd';
+	font-family: 'proxima_novasemibold';
 	font-size: 14px;
 	vertical-align: center;
 	color: #ffffff;
@@ -282,7 +297,6 @@ a {
 	margin-bottom: 5px;
 	color: #4a545d;
 }
-
 .experience-title, .edu-title, .course-title{
 	font-family: 'fira_sansbook';
 	font-size: 17px;
@@ -295,17 +309,17 @@ a {
 	display: block;
 }
 .experience{
-	background: url(../img/bag.png) center left 58px no-repeat;
+	background: url(../img/bag.png) 58px center no-repeat;
 }
 .edu {
-	background: url(../img/header.png) center left 55px no-repeat;
+	background: url(../img/header.png) 55px center no-repeat;
 }
 .course {
-	background: url(../img/doc.png) center left 64px no-repeat;
+	background: url(../img/doc.png) 64px center no-repeat;
 }
 
 .footer {
-	width: 100%;
+	min-width: 980px;
 	height: 80px;
 	margin-top: -80px;	
 	background:#eff3f7 url(../img/line.png) top center no-repeat ;
@@ -314,18 +328,24 @@ a {
 	font-size: 13px;
 	height: 80px;
 }
-
-.login {
-    float: left;
+.login-link{
+	position: relative;
+	float: left;
+	top: 26px;
+	left: 30px;
 	width: 20px;
-	height: 80px;
+	height: 32px;
 	background: url(../img/lock.png) center left no-repeat;
+	font-size: 0;
 }
-.login:hover {
+
+.login-link:hover {
 	background: url(../img/unlock.png) center left no-repeat;
 }
+
 .copyrights {
+	margin: 0 50px;
+	position: relative;
+	top: 36px;
 	text-align: center;
-	margin: 0;
-	padding-top: 30px;
 }

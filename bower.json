@@ -7,6 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "jquery": "1.11.3",
-    "normalize.css": "~3.0.3"
+    "normalize.css": "~3.0.3",
+    "modernizr": "~2.8.3"
   }
 }
