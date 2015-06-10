@@ -40,3 +40,13 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'fira_sanslight_italic';
+    src: url('firasans-lightitalic.eot');
+    src: url('firasans-lightitalic.eot?#iefix') format('embedded-opentype'),
+         url('firasans-lightitalic.woff') format('woff'),
+         url('firasans-lightitalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

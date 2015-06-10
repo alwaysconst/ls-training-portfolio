@@ -1,0 +1,108 @@
+@import "../css/main.css";
+
+.mywork{
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0 5px;
+}
+.mywork-item{
+	display: inline-block;
+	padding-top: 10px;
+	margin: 0 15px 33px;
+	width: 181px;
+}
+.mywork-img-wrapper{
+	position:relative;
+	width: 177px;
+	height: 123px;
+	border-radius: 5px;
+	border: 2px solid #3ba8c0;
+	overflow: hidden;
+}
+.mywork-img{
+	width: 100%;
+}
+.mywork-img:hover{
+	width: 100%;
+}
+.mywork-img-title-wrapper{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #016ca4;
+	-webkit-transition: all .4s;
+    		transition: all .4s;
+    opacity: 0;
+	text-align: center;
+	z-index: -1;
+}
+.mywork-img-title{
+	position: relative;
+	padding: 0;
+	top: 50px;
+	border: 0 solid #fff;
+    font-family: 'fira_sansbook';
+    font-size: 0;
+	color: #fff;
+	-webkit-transition: all .4s;
+    transition: all .4s;
+}
+.mywork-img-wrapper:hover  .mywork-img-title-wrapper{
+    opacity: .8;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		filter: alpha(opacity=75);
+    z-index: 1;
+}
+.mywork-img-wrapper:hover  .mywork-img-title{
+	padding: 0 10px;
+	font-size: 13px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+}
+
+.mywork-linkname{
+	display: block;
+	text-align: center;
+	color: #3ba8c0;
+	padding: 10px 0;
+	font-size: 13px;
+    font-family: 'fira_sanslight_italic';
+    line-height: 13px;
+}
+.mywork-text{
+	display: block;
+	text-align: center;
+	color: #4a545d;
+	font-size: 15px;
+    font-family: 'fira_sanslight';
+    line-height: 20px;
+}
+.new-item{
+	display: inline-block;
+	margin: 0 15px 67px;
+	background: #fff;
+	overflow: hidden;
+	border-radius: 5px;
+	border: 1px dashed #3ba8c0;
+	width: 177px;
+	height: 123px;
+}
+.new-item:hover{
+	background: #edf8fc;
+}
+
+.new-img{
+	width: 100%;
+	height: 32px;
+	margin-top: 32px;
+	text-align: center;
+	background: url(../img/portfolio-add.png)  center no-repeat;
+}
+.new-text{
+	display: block;
+	padding-top: 40px;
+	font-size: 13px;
+    font-family: 'fira_sanslight';
+    color:#3ba8c0;
+}
