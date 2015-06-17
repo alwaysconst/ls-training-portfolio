@@ -1,0 +1,46 @@
+@import "../css/main.css";
+
+.contact-title-wrapper{
+	margin: 0 0 45px 0;
+	padding: 0;
+	width: 100%;
+	background-color: #48cbe8;
+	height: 120px;
+	text-align: center;
+	border-bottom: 16px solid #67dffa;
+}
+.contact-title{
+	margin: 0;
+	padding-top: 43px;
+  color: #fff;
+  font-size: 27px;
+  font-family: 'fira_sansbook';
+  font-weight: normal;
+}
+.contact-body{
+	width: 400px;
+	margin: 0 auto;
+}
+.contact-form-row{
+	width: 100%;
+}
+.contact-form_column-left{
+	display: block;
+	float: left;
+}
+.name{
+  width: 172px;
+}
+.contact-form_column-right{
+	display: block;
+	float: right;
+}
+.email{
+  width: 172px;
+}
+.g-recaptcha{
+  padding: 0 50px 10px;
+  width: auto;
+}
+
+

@@ -1,4 +1,7 @@
 @import "../fonts/fonts.css";
+html {
+    overflow-y:scroll;
+}
 
 body, html{
     height:100%;
@@ -26,7 +29,7 @@ body a {
 	min-height:100%;
 	min-width: 980px;
 	height:auto!important;
-	overflow:hidden;
+    overflow:hidden;
 }
 .wrapper:after {
 	content: "";
@@ -128,7 +131,7 @@ body a {
 }
 .nav-link{
 	position: relative;
-	padding: 20px 17px 0;
+	padding: 20px 0 0 17px;
 	color: #959aa8;
 	display: block;
 }
@@ -210,6 +213,7 @@ body a {
 	border-radius: 4px;
 	margin-bottom: 26px;
 	padding-bottom: 34px;
+	overflow: hidden;
 }
 .section-box-header {
 	padding: 14px 22px 12px;

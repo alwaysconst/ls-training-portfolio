@@ -1,0 +1,100 @@
+/*Открыть - Общие формы*/
+.label{
+  display: block;
+  height: 26px;
+  font-family: 'fira_sanslight';
+  font-size: 19px;
+  color: #959aa8;
+}
+.textarea {
+  min-width: 378px;
+  max-width: 378px;
+  height: 160px;
+  resize: none;
+}
+.button {
+  font-family: 'fira_sansbook';
+  font-size: 19px;
+  line-height: 28px;
+  padding: 2px 22px;
+  color: #fff;
+  border-radius: 5px;
+}
+.button-submit {
+  border: 0 #48cbe8;
+  border-bottom: 2px solid #3ba8c0;
+  background: #48cbe8;
+}
+.button-submit:hover {
+  background: #4fdefe;
+}
+.button-reset {
+  border: 0 #849db5;
+  border-bottom: 2px solid #687b8f;
+  background: #849db5;
+}
+.button-reset:hover {
+  background: #a2b5c7;
+}
+/*Задаём стиль для плейсхолдера*/
+::-webkit-input-placeholder {color:#48cbe8;}
+::-moz-placeholder          {color:#48cbe8;}/* Firefox 19+ */
+:-moz-placeholder           {color:#48cbe8;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#48cbe8;}
+
+/*Закрыть - Общие формы*/
+
+
+/*Открыть - Форма вставки файлов*/
+.input {
+	height: 21px;
+    line-height: 39px;
+    display: block;
+}
+.input, .input-file, .textarea {
+    display: inline-block;
+	position: relative;
+    padding: 10px;
+    margin-bottom: 12px;
+	background: #fff;
+	font-family: 'fira_sanslight';
+    font-size: 13px;
+    line-height: 21px;
+    color: #48cbe8;
+	border: 1px solid #48cbe8;
+	border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+}
+.input-file [type=file] {
+	display: block;
+	filter: alpha(opacity=0);
+	min-height: 100%;
+	min-width: 100%;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	text-align: right;
+	top: 0;
+	cursor: inherit;
+}
+.input-file-image {
+    position: relative;
+}
+.input-file-image:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 52px;
+    height: 41px;
+    content: '';
+    background: #48cbe8 url(../img/upload-file.png) center no-repeat;
+}
+.input-file-image-text{
+    height: 21px;
+    width: 302px;
+    float: left;
+}
+/*Закрыть - Форма вставки файлов
