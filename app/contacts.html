@@ -11,6 +11,7 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="css/contacts.css">
 	<link rel="stylesheet" href="css/forms.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="bower/normalize.css/normalize.css"> 
 	<script src="bower/modernizr/modernizr.js"></script>
 </head>
@@ -64,17 +65,18 @@
 	                <div class="contact-body">
 	                    <form action="" id="" class="contact-form">
 	                        <div class="contact-form-row clearfix">
-	                            <div class="contact-form_column-left">
+	                            <div class="form-item contact-form_column-left">
 	                                <label for="contact-form__name" class="label">Имя</label>
-	                                <input type="text" id="" name="contact-name" class="input name" placeholder="Как к Вам обращаться">
+	                                <input type="text" id="" name="contact-name" class="form-input name" placeholder="Как к Вам обращаться">
 	                            </div>
-	                            <div class="contact-form_column-right">
+	                            <div class="form-item contact-form_column-right">
 	                                <label for="contact-form__email" class="label">Email</label>
-	                                <input type="email" id="contact-form__email" name="contact-email" class="input email" placeholder="Ваш адрес e-mail">
+	                                <input type="email" id="contact-form__email" name="contact-email" class="form-input email" placeholder="Ваш адрес e-mail">
 	                            </div>
 	                        </div>
+	                        <div class="form-item">
 	                        <label for="contact-form__message" class="label">Сообщение</label>
-	                        <textarea id="contact-form__message" name="contact-message" id="" cols="30" rows="10" class="textarea" placeholder="Напишите кратко, в чем суть"></textarea>
+	                        <textarea id="contact-form__message" name="contact-message" id="" cols="30" rows="10" class="form-input textarea" placeholder="Напишите кратко, в чем суть"></textarea></div>
 							<label for="contact-form__message" class="label">Подтвердите действия</label>
 							<div class="g-recaptcha" data-sitekey="6LdhPQgTAAAAAOdhouJRGQMzRtWvsVz_JjBJwQT9"></div>
 	                        <div class="contact-form__row clearfix">
@@ -99,11 +101,12 @@
 			</div>
 		</div>
 	</footer>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.min.js"><\/script>')</script>
-	<script src="js/common.js"></script>
-	<script src="bower/jquery/dist/jquery.js"></script>
 	<script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/validation.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 </html>

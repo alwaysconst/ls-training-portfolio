@@ -36,22 +36,38 @@
 .button-reset:hover {
   background: #a2b5c7;
 }
+
 /*Задаём стиль для плейсхолдера*/
 ::-webkit-input-placeholder {color:#48cbe8;}
 ::-moz-placeholder          {color:#48cbe8;}/* Firefox 19+ */
 :-moz-placeholder           {color:#48cbe8;}/* Firefox 18- */
 :-ms-input-placeholder      {color:#48cbe8;}
 
+/*Задаем цвет проверки полей*/
+.validate{}
+
+.has-success{
+  border-color: #6ae84d;
+  background: #d2fdd4;
+}
+.has-error{
+  border-color: #f97e76;
+  background: #fdd5d2;
+}
+
 /*Закрыть - Общие формы*/
 
 
 /*Открыть - Форма вставки файлов*/
+.textarea{
+  width: 400px;
+}
 .input {
 	height: 21px;
     line-height: 39px;
     display: block;
 }
-.input, .input-file, .textarea {
+.input, .textarea {
     display: inline-block;
 	position: relative;
     padding: 10px;
@@ -92,9 +108,10 @@
     content: '';
     background: #48cbe8 url(../img/upload-file.png) center no-repeat;
 }
-.input-file-image-text{
-    height: 21px;
-    width: 302px;
+.input-file__text{
+    width: 322px;
     float: left;
+    height: 41px;
+    margin: 0;
 }
 /*Закрыть - Форма вставки файлов

@@ -29,14 +29,59 @@
 	float: left;
 }
 .name{
-  width: 172px;
+    display: inline-block;
+	position: relative;
+    padding: 10px;
+    margin-bottom: 12px;
+	background: #fff;
+	font-family: 'fira_sanslight';
+    font-size: 13px;
+    line-height: 21px;
+    color: #48cbe8;
+	border: 1px solid #48cbe8;
+	border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    width: 192px;
 }
 .contact-form_column-right{
 	display: block;
 	float: right;
 }
 .email{
-  width: 172px;
+    display: inline-block;
+	position: relative;
+    padding: 10px;
+    margin-bottom: 12px;
+	background: #fff;
+	font-family: 'fira_sanslight';
+    font-size: 13px;
+    line-height: 21px;
+    color: #48cbe8;
+	border: 1px solid #48cbe8;
+	border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    width: 192px;
+}
+.textarea{
+    display: inline-block;
+	position: relative;
+    padding: 10px;
+    margin-bottom: 12px;
+	background: #fff;
+	font-family: 'fira_sanslight';
+    font-size: 13px;
+    line-height: 21px;
+    color: #48cbe8;
+	border: 1px solid #48cbe8;
+	border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    width: 400px;
 }
 .g-recaptcha{
   padding: 0 50px 10px;
