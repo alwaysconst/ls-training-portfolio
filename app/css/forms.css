@@ -93,10 +93,11 @@
 	right: 0;
 	text-align: right;
 	top: 0;
-	cursor: inherit;
+	cursor: pointer;
 }
 .input-file-image {
     position: relative;
+    cursor: pointer;
 }
 .input-file-image:after {
     position: absolute;
@@ -107,6 +108,8 @@
     height: 41px;
     content: '';
     background: #48cbe8 url(../img/upload-file.png) center no-repeat;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
 }
 .input-file__text{
     width: 322px;

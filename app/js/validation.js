@@ -25,49 +25,33 @@
 
 			// против повторного нажатия
 	        submitBtn.attr({disabled: 'disabled'});
-
-            $.ajax({
-                type: "POST",
-                url: "contact_form/contact_process.php",
-                data: str                
-            }).done(function(msg) {
-                if(msg == 'OK') {
-                    result = '<div class="bg-success">Спасибо за ваш заказ! Мы свяжемся с вами в течение 15 минут.</div>';
-                    form.html(result);
-                } else {
-                    form.html(msg);
-                }		
-            }).always(function(){
-            	submitBtn.removeAttr("disabled");
-            })
 		},
 
 		validateForm: function (form){
 
-			var inputs = form.find('textarea, input'),
-				valid = true;
+			var inputs = form.find('input , textarea'),
+				valid = false;
 			
-			inputs.tooltip('destroy');
 
 			$.each(inputs, function(index, val) {
 				var input = $(val),
 					val = input.val(),
 					formInput = $('.form-input'),
-					formItem = input.parents('.form-item'),
-					label = formItem.find('label').text().toLowerCase(),
-					textError = 'Добавьте ' + label;
+					textError = input.attr('data-error-message');
 
 				if(val.length === 0){
-					formInput.addClass('has-error').removeClass('has-success');	
+					input.addClass('has-error').removeClass('has-success');	
 					input.tooltip({
-						trigger: 'manual',
-						placement: 'left',
+						trigger: 'hide',
+						placement: input.attr('tooltip-position'),
 						title: textError
 					}).tooltip('show');		
 					valid = false;		
 				}else{
-					formInput.addClass('has-success').removeClass('has-error');
+					input.removeClass('has-error').addClass('has-success');
 					input.tooltip('hide');
+					inputs.tooltip('destroy');
+					valid = true;	
 				}	
 			});
 
@@ -76,7 +60,8 @@
 		},
 
 		removeError: function() {
-			$(this).removeClass('has-error').find('input').tooltip('destroy');
+			$(this).removeClass('has-error').find('input').tooltip('hide'),
+			$('.tooltip').remove();
 		}
 		
 	}

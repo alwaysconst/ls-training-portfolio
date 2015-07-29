@@ -67,24 +67,24 @@
 	                        <div class="contact-form-row clearfix">
 	                            <div class="form-item contact-form_column-left">
 	                                <label for="contact-form__name" class="label">Имя</label>
-	                                <input type="text" id="" name="contact-name" class="form-input name" placeholder="Как к Вам обращаться">
+	                                <input type="text" id="" name="contact-name" class="form-input name" placeholder="Как к Вам обращаться" data-validation='name' data-error-message="Пожалуйста, представьтесь" tooltip-position="left">
 	                            </div>
 	                            <div class="form-item contact-form_column-right">
 	                                <label for="contact-form__email" class="label">Email</label>
-	                                <input type="email" id="contact-form__email" name="contact-email" class="form-input email" placeholder="Ваш адрес e-mail">
+	                                <input type="email" id="contact-form__email" name="contact-email" class="form-input email" placeholder="Ваш адрес e-mail" data-validation='email' data-error-message="Укажите ваш e-mail" tooltip-position="right">
 	                            </div>
 	                        </div>
 	                        <div class="form-item">
 	                        <label for="contact-form__message" class="label">Сообщение</label>
-	                        <textarea id="contact-form__message" name="contact-message" id="" cols="30" rows="10" class="form-input textarea" placeholder="Напишите кратко, в чем суть"></textarea></div>
+	                        <textarea id="contact-form__message" name="contact-message" id="" cols="30" rows="10" class="form-input textarea" placeholder="Напишите кратко, в чем суть" data-validation='name' data-error-message="Вы кое что забыли" tooltip-position="left"></textarea></div>
 							<label for="contact-form__message" class="label">Подтвердите действия</label>
 							<div class="g-recaptcha" data-sitekey="6LdhPQgTAAAAAOdhouJRGQMzRtWvsVz_JjBJwQT9"></div>
 	                        <div class="contact-form__row clearfix">
 	                            <div class="contact-form_column-left">
-	                                <input type="submit" class="button button-submit" value="Отправить">
+	                                <button type="submit" class="button button-submit"data-remodal-action="submit">Отправить</button>
 	                            </div>
 	                            <div class="contact-form_column-right">
-	                                <input type="reset" class="button button-reset" value="Очистить">
+	                                <button type="reset" class="button button-reset" data-remodal-action="reset">Очистить</button>
 	                            </div>
 	                        </div>
 	                    </form>

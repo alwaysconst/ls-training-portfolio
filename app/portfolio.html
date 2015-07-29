@@ -177,28 +177,28 @@
 			<!-- Вставляем название проекта -->
 				<div class="form-item">
 					<label for="inputWorkName" class="label">Название проекта</label>
-					<input type="text" data-validation='text' name="name" id="inputWorkName" class="form-input" placeholder="Введите название" data-error-message="Нужно название">	
+					<input type="text" data-validation='text' name="name" id="inputWorkName" class="form-input" placeholder="Введите название" data-validation='name' data-error-message="Добавьте название проекта" tooltip-position="left">	
 				</div>		
 
 			<!-- Вставляем картинку проекта -->
 				<div class="form-item">
 					<label for="inputImage" class="label">Изображение проекта</label>
-                	<label for="inputImage" class="input-file input-file-image"><span class="form-input input-file__text">Выберите файл</span>
+                	<label for="inputImage" class="input-file input-file-image" placeholder="Загрузите изображение"><span class="form-input input-file__text">Выберите файл</span>
                     	
-                    	<input id="inputImage" class=" input-file__input" name="file-image" type="file" placeholder="Загрузите изображение" data-error-message="Нужен скриншот">
+                    	<input id="inputImage" class=" input-file__input" name="file-image" type="file" placeholder="Загрузите изображение" data-validation="image" data-error-message="Нужен скриншот" tooltip-position="left">
                 	</label>
             	</div>
 
 			<!-- Вставляем ссылку на проект-->
 				<div class="form-item">
 					<label for="inputWorkUrl" class="label">URL проекта</label>
-					<input type="text" name="url" id="inputWorkUrl" class="form-input" placeholder="Добавьте сссылку">	
+					<input type="text" name="url" id="inputWorkUrl" class="form-input" placeholder="Добавьте ссылку" data-validation="url" data-error-message="Добавьте ссылку на проект" tooltip-position="left">	
 				</div>
 
 			<!-- Вставляем описание проекта -->
 				<div class="form-item">
 					<label for="inputWorkMessage" class="label">Описание</label>
-					<textarea type="text" name="message" id="inputWorkMessage" cols="1" rows="5" class="form-input" placeholder="Пару слов о вашем проекте"></textarea>
+					<textarea type="text" name="message" id="inputWorkMessage" cols="1" rows="5" class="form-input" placeholder="Пару слов о вашем проекте" data-validation="text" data-error-message="Добавьте описание проекта" tooltip-position="left"></textarea>
 				</div>
 
 			<!-- Вставляем кнопку "Добавить" -->
