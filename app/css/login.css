@@ -1,0 +1,11 @@
+@import "../css/main.css";
+.container-login{
+	min-height: 100%;
+    width: 100%;
+	text-align: center; 
+}
+.login{
+	background: #eff3f7;
+	width: 590px;
+	display:block;
+}

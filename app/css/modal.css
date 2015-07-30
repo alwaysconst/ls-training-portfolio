@@ -63,15 +63,15 @@
 
 .remodal-overlay {
   position: fixed;
-  z-index: 9999;
-  top: -5000px;
-  right: -5000px;
-  bottom: -5000px;
-  left: -5000px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: -0px;
   display: none;
-  background: rgba(88, 105, 122, 0.75);
-	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0.75)";
-		filter: alpha(opacity=75);
+  background: #828f9b;
+          opacity: .8;
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=75);
 }
 
 /* Necessary styles of the wrapper */
@@ -93,7 +93,7 @@
 .remodal-wrapper:after {
   display: inline-block;
 
-  height: 100%;
+/*  height: 100%;*/
   margin-left: -0.05em;
 
   content: "";

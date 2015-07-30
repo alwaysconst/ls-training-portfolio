@@ -6,10 +6,7 @@
   font-size: 19px;
   color: #959aa8;
 }
-.textarea {
-  min-width: 378px;
-  max-width: 378px;
-  height: 160px;
+textarea {
   resize: none;
 }
 .button {
@@ -44,7 +41,6 @@
 :-ms-input-placeholder      {color:#48cbe8;}
 
 /*Задаем цвет проверки полей*/
-.validate{}
 
 .has-success{
   border-color: #6ae84d;
@@ -79,7 +75,6 @@
     color: #48cbe8;
 	border: 1px solid #48cbe8;
 	border-radius: 4px;
-    cursor: pointer;
     outline: none;
     overflow: hidden;
 }
@@ -99,7 +94,7 @@
     position: relative;
     cursor: pointer;
 }
-.input-file-image:after {
+.input-file-image-button {
     position: absolute;
     top: 0;
     right: 0;

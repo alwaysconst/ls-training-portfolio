@@ -10,6 +10,7 @@
 		setUpListeners: function () {
 			$('form').on('submit', app.submitForm);
 			$('form').on('keydown', '.has-error', app.removeError);
+
 		},
 
 		submitForm: function (e) {
@@ -24,7 +25,7 @@
 			var str = form.serialize();   
 
 			// против повторного нажатия
-	        submitBtn.attr({disabled: 'disabled'});
+	        // submitBtn.attr({disabled: 'disabled'});
 		},
 
 		validateForm: function (form){
@@ -49,8 +50,7 @@
 					valid = false;		
 				}else{
 					input.removeClass('has-error').addClass('has-success');
-					input.tooltip('hide');
-					inputs.tooltip('destroy');
+					input.tooltip('destroy');
 					valid = true;	
 				}	
 			});
@@ -60,10 +60,9 @@
 		},
 
 		removeError: function() {
-			$(this).removeClass('has-error').find('input').tooltip('hide'),
+			$(this).removeClass('has-error').find('input, span').tooltip('destroy'),
 			$('.tooltip').remove();
 		}
-		
 	}
 
 	app.initialize();

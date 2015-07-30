@@ -40,7 +40,6 @@
     color: #48cbe8;
 	border: 1px solid #48cbe8;
 	border-radius: 4px;
-    cursor: pointer;
     outline: none;
     overflow: hidden;
     width: 192px;
@@ -61,12 +60,11 @@
     color: #48cbe8;
 	border: 1px solid #48cbe8;
 	border-radius: 4px;
-    cursor: pointer;
     outline: none;
     overflow: hidden;
     width: 192px;
 }
-.textarea{
+.message{
     display: inline-block;
 	position: relative;
     padding: 10px;
@@ -78,10 +76,10 @@
     color: #48cbe8;
 	border: 1px solid #48cbe8;
 	border-radius: 4px;
-    cursor: pointer;
     outline: none;
     overflow: hidden;
     width: 400px;
+    height: 160px;
 }
 .g-recaptcha{
   padding: 0 50px 10px;
