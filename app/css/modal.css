@@ -3,6 +3,7 @@
 	background: #48cbe8;
 	width: 100%;
 	height: 50px;
+  border-radius: 4px 4px 0 0;
 	border-bottom: 8px solid #67dffa;
 }
 .form-title{
@@ -46,6 +47,20 @@
   width: 322px;
   resize: none;
 }
+
+.input-file__text{
+  border: 1px solid;
+  border-radius: 4px;
+  position: relative;
+  font-family: 'fira_sanslight';
+  font-size: 13px;
+  padding: 10px 10px;
+  margin-bottom: 12px;
+  color: #48cbe8;
+  width: 322px;
+  resize: none;
+}
+
 .modal-button{
 	position: relative;
 	text-align: center;
@@ -66,7 +81,7 @@
   top: 0px;
   right: 0px;
   bottom: 0px;
-  left: -0px;
+  left: 0px;
   display: none;
   background: #828f9b;
           opacity: .8;
@@ -84,6 +99,7 @@
   bottom: 0;
   left: 0;
   padding: 10px 10px 0;
+  margin: auto -15px;
   display: none;
   overflow: auto;
   text-align: center;
@@ -196,7 +212,7 @@
 
 .remodal-close {
   position: absolute;
-  top: 15px;
+  top: 10px;
   right: 15px;
   display: block;
   overflow: visible;

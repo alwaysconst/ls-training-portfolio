@@ -8,8 +8,10 @@
 		},
 
 		setUpListeners: function () {
-			$('form').on('submit', app.submitForm);
-			$('form').on('keydown', '.has-error', app.removeError);
+			$('form').on('submit' , app.submitForm);
+			$('form').on('reset' , app.removeError);
+			$('form').on('close' , app.removeError);
+			$('form').on('click' , '.has-error', app.removeError);
 
 		},
 
@@ -32,12 +34,11 @@
 
 			var inputs = form.find('input , textarea'),
 				valid = false;
-			
 
 			$.each(inputs, function(index, val) {
 				var input = $(val),
 					val = input.val(),
-					formInput = $('.form-input'),
+					formInput = $('.form-input, input-file__text'),
 					textError = input.attr('data-error-message');
 
 				if(val.length === 0){
@@ -60,7 +61,7 @@
 		},
 
 		removeError: function() {
-			$(this).removeClass('has-error').find('input, span').tooltip('destroy'),
+			$(this).removeClass('has-error').find('input, span, textarea').removeClass('has-error').removeClass('has-success').tooltip('destroy'),
 			$('.tooltip').remove();
 		}
 	}

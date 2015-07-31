@@ -25,6 +25,21 @@ textarea {
 .button-submit:hover {
   background: #4fdefe;
 }
+.button-login {
+  font-family: 'fira_sansbook';
+  font-size: 36px;
+  line-height: 36px;
+  padding: 11px 63px;
+  color: #fff;
+  border-radius: 5px;
+  border: 0 #48cbe8;
+  border-bottom: 2px solid #3ba8c0;
+  background: #48cbe8;
+  margin-bottom: 25px;
+}
+.button-login:hover {
+  background: #4fdefe;
+}
 .button-reset {
   border: 0 #849db5;
   border-bottom: 2px solid #687b8f;

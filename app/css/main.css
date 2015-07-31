@@ -347,6 +347,16 @@ body a {
 	background: url(../img/unlock.png) center left no-repeat;
 }
 
+.index-link{
+	position: relative;
+	float: left;
+	top: 26px;
+	left: 18px;
+	width: 32px;
+	height: 32px;
+	background: url(../img/left-arrow.png) center left no-repeat;
+	font-size: 0;
+}
 .copyrights {
 	margin: 0 50px;
 	position: relative;
